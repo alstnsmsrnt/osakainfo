@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css\osaka12345.css"/>
+<script src="osaka.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Kosugi&display=swap&subset=japanese" rel="stylesheet">
+<style media="screen">
+</style>
+</head>
+<body>
+	<div class="top">
+<header>
+<div class="header">
+	<img src="images/logo.png" alt="" class="pointer" onclick="location.href='http://www.msosakainfo.ga/menu';">
+</div>
+</header>
+<div id="googleMap" style="width:100%;height:400px;">
+</div>
+<div class="frame">
+	<div class="maps">
+		<label for="chk-demo1" class="checks" style="padding-right:20px;">
+		<input type="checkbox" id="chk-demo1"/>
+		<span class="spn" style="padding-left: 23px;">ホテル</span>
+		</label>
+		<label for="chk-demo2" class="checks" style="padding-right:20px;">
+		<input type="checkbox" id="chk-demo2"/>
+		<span class="spn" style="padding-left: 23px;">飲食店</span>
+		</label>
+		<label for="chk-demo3" class="checks" style="padding-right:20px;">
+		<input type="checkbox" id="chk-demo3"/>
+		<span class="spn" style="padding-left: 23px;">ショッピング</span>
+		</label>
+		<label for="chk-demo4" class="checks" style="padding-right:20px;">
+		<input type="checkbox" id="chk-demo4"/>
+		<span class="spn" style="padding-left: 23px;">神社・仏閣</span>
+		</label>
+		<label for="chk-demo5" class="checks" style="padding-right:20px;">
+		<input type="checkbox" id="chk-demo5"/>
+		<span class="spn" style="padding-left: 23px;">スポーツ施設</span>
+		</label>
+		<label for="chk-demo6" class="checks" style="padding-right:20px;">
+		<input type="checkbox" id="chk-demo6"/>
+		<span class="spn" style="padding-left: 23px;">美術館・博物館</span>
+		</label>
+		<label for="chk-demo7" class="checks" style="padding-right:20px;">
+		<input type="checkbox" id="chk-demo7"/>
+		<span class="spn" style="padding-left: 23px;">観光施設</span>
+		</label>
+		<label for="chk-demo8" class="checks" style="padding-right:20px;">
+		<input type="checkbox" id="chk-demo8"/>
+		<span class="spn" style="padding-left: 23px;">WI-FIスポット</span>
+		<label for="chk-demo9" class="checks" style="padding-right:20px;">
+		<input type="checkbox" id="chk-demo9"/>
+		<span class="spn" style="padding-left: 23px;">観光施設</span><br>
+		</label><label for="chk-demo10" class="checks" style="padding-right:20px;">
+		<input type="checkbox" id="chk-demo10"/>
+		<span class="spn" style="padding-left: 23px;">観光施設</span>
+		</label><label for="chk-demo11" class="checks" style="padding-right:20px;">
+		<input type="checkbox" id="chk-demo11"/>
+		<span class="spn" style="padding-left: 23px;">観光施設</span>
+		</label>
+	</div>
+	<div class="mapstext">
+		 OSAKA LOCATION MAP
+	</div>
+	<div class="mada" style="text-align:center;">
+		 0 ページこのエリアに見つかりました。
+	</div>
+</div>
+</div>
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(34.6873,135.5260),
+  zoom:13,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+</div>
+<footer id="serviceNameArea"></footer>
+<script src="footer.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv1C-elKPmkHNLgM2ZdK95OgdOxAEHK3U&callback=myMap"></script>
+</body>
+</html>

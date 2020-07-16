@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:200,300,400,500,600,700,900&display=swap&subset=japanese" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="css/osaka1234.css"/>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src="osaka.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link href="https://fonts.googleapis.com/css?family=Kosugi&display=swap&subset=japanese" rel="stylesheet">
+<style media="screen">
+          body{
+            font-family: 'Kosugi' ;
+            font-weight: 400;
+          }
+</style>
+</head>
+<body>
+  <div class="top">
+<header>
+<div class="header">
+	<img src="images/logo.png" alt="" class="pointer" onclick="location.href='http://www.msosakainfo.ga/menu';">
+</div>
+</header>
+<div class="test">
+	<div class="frame">
+		<section>
+		<div class="containersecond">
+			<div class="titlefont">
+				大阪周遊パスで、はじめての大阪満喫コース
+			</div>
+			<hr width="100%;">
+			<input type="button" class="minibutton" value="大阪市" onclick="location.href='third';">
+			<input type="button" class="minibutton" value="おすすめタグ" onclick="location.href='third';">
+			<input type="button" class="minibutton" value="エリアで絞り込む" onclick="location.href='third';">
+			<input type="button" class="minibutton" value="検索" onclick="location.href='third';">
+			<input type="button" class="minibutton" value="その他" onclick="location.href='third';">
+			<div style="text-align: center; margin-top:1%;">
+				<img src="images/osaka-castle-2403923_1920.jpg" alt="osakacastle" width="60%">
+			</div>
+			<div class="wrap">
+				キタ・ミナミはもちろん、大阪城、通天閣を巡る、よくばりなあなたにぴったりなコース。大阪の代表的な観光名所を巡るので、はじめて大阪にいらした方にもオススメですよ。「大阪周遊パス」を片手に「乗って遊んで、食べて買って」<br>
+				パワフルに大阪を飛びまわろう。 「大阪周遊パス」を利用すれば、こんなにおトク！！<br>
+				 －－－－－－－－－－－－－－－－－－－－－－－－<br>
+				 【一例】<br>
+				 通常 交通費1,050円＋入場料金6,400円＝7,450円<br>
+				 7,450円－周遊パス2,700円 ＝4,750円お得!!<br>
+				 －－－－－－－－－－－－－－－－－－－－－－－－<br>
+				 ※各施設の料金は2019年7月現在のものです。<br>
+				 ※休館日や臨時休館、または特別展等で周遊パスが利用できない場合がありますので、事前の確認をお勧め致します。
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+<script>
+function initMap() {
+var uru = {lat: 34.6873, lng: 135.5260};
+var map = new google.maps.Map(
+   document.getElementById('map'), {zoom: 15, center: uru});
+var marker = new google.maps.Marker({position: uru, map: map});
+}
+ </script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv1C-elKPmkHNLgM2ZdK95OgdOxAEHK3U&callback=initMap">
+ </script>
+ <footer id="serviceNameArea"></footer>
+ <script src="footer.js"></script>
+</body>
+</html>
